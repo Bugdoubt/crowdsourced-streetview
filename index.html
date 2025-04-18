@@ -1,1 +1,28 @@
-<!DOCTYPE html><html><head><title>Demo</title></head><body><h1>Street View Demo</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crowdsourced Street View Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+</head>
+<body>
+  <h1>Crowdsourced Street View</h1>
+  <div id="map"></div>
+  <div id="viewer">
+    <img id="photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/June_odd-eyed-cat.jpg/640px-June_odd-eyed-cat.jpg" alt="Street View" />
+    <div class="buttons">
+      <button onclick="prevImage()">Back</button>
+      <button onclick="nextImage()">Next</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
