@@ -45,7 +45,10 @@ for (const [name, data] of Object.entries(cityImages)) {
 function updateImage() {
   if (currentCity) {
     const imageUrl = cityImages[currentCity].images[currentImageIndex];
-    document.getElementById("photo").src = imageUrl;
+    const img = document.getElementById("photo");
+    if (img) {
+      img.src = imageUrl;
+    }
   }
 }
 
