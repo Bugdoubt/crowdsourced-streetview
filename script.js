@@ -23,7 +23,7 @@ const cityImages = {
   "Paris": {
     coords: [48.8584, 2.2945],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/a/af/Paris_vue_d%27ensemble_tour_Eiffel.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Tour_Eiffel_Wikimedia_Commons.jpg/640px-Tour_Eiffel_Wikimedia_Commons.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/6e/Cathedrale_Notre-Dame_de_Paris.jpg"
     ]
   }
