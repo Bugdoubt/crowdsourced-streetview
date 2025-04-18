@@ -9,22 +9,22 @@ const cityImages = {
   "New York": {
     coords: [40.758, -73.9855],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/4/4f/Times_Square_New_York_City_%28HDR%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/57/NYC_Times_Square_wide_angle.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Times_Square_New_York_City_%28HDR%29.jpg/480px-Times_Square_New_York_City_%28HDR%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/NYC_Times_Square_wide_angle.jpg/480px-NYC_Times_Square_wide_angle.jpg"
     ]
   },
   "London": {
     coords: [51.5033, -0.1195],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/e/e1/London_Eye_Twilight_April_2006.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/fd/Big_Ben_2012-06-25.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/London_Eye_Twilight_April_2006.jpg/480px-London_Eye_Twilight_April_2006.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Big_Ben_2012-06-25.jpg/480px-Big_Ben_2012-06-25.jpg"
     ]
   },
   "Paris": {
     coords: [48.8584, 2.2945],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Tour_Eiffel_Wikimedia_Commons.jpg/640px-Tour_Eiffel_Wikimedia_Commons.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/6/6e/Cathedrale_Notre-Dame_de_Paris.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Tour_Eiffel_Wikimedia_Commons.jpg/480px-Tour_Eiffel_Wikimedia_Commons.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Cathedrale_Notre-Dame_de_Paris.jpg/480px-Cathedrale_Notre-Dame_de_Paris.jpg"
     ]
   }
 };
