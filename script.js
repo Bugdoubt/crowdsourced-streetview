@@ -6,10 +6,10 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 const londonImages = [
-  "https://live.staticflickr.com/65535/53118622644_0d5e11474f_z.jpg",
-  "https://live.staticflickr.com/65535/53119030180_204e2b59cc_z.jpg",
-  "https://live.staticflickr.com/65535/53117803197_6d21c3dd18_z.jpg",
-  "https://live.staticflickr.com/65535/53119009145_81eb42a73f_z.jpg"
+  "https://live.staticflickr.com/65535/53661293729_3a905f5829_z.jpg",
+  "https://live.staticflickr.com/65535/53661159128_9e6a0aa307_z.jpg",
+  "https://live.staticflickr.com/65535/53660806696_67ae820d88_z.jpg",
+  "https://live.staticflickr.com/65535/53660811576_1cce6e44fa_z.jpg"
 ];
 
 let currentIndex = 0;
