@@ -1,9 +1,9 @@
 
 const notredameImages = [
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Notre_Dame_de_Paris_vue_de_face.jpg/800px-Notre_Dame_de_Paris_vue_de_face.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Notre_Dame_de_Paris_depuis_Notre_Dame.jpg/800px-Notre_Dame_de_Paris_depuis_Notre_Dame.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Notre_Dame_de_Paris_vue_de_c%C3%B4t%C3%A9.jpg/800px-Notre_Dame_de_Paris_vue_de_c%C3%B4t%C3%A9.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Notre_Dame_inside.jpg/800px-Notre_Dame_inside.jpg"
+  "https://images.unsplash.com/photo-1564501049412-61c2a3083793?auto=format&fit=crop&w=900&q=80",
+  "https://images.unsplash.com/photo-1589891455809-5b9d27bbf70d?auto=format&fit=crop&w=900&q=80",
+  "https://images.unsplash.com/photo-1566764629489-1b6b68d8a0e7?auto=format&fit=crop&w=900&q=80",
+  "https://images.unsplash.com/photo-1580235544729-91a989ed915e?auto=format&fit=crop&w=900&q=80"
 ];
 
 let currentIndex = 0;
