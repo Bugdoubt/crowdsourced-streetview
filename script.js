@@ -1,69 +1,39 @@
 
-const map = L.map('map').setView([20, 0], 2);
+const map = L.map('map').setView([51.5074, -0.1278], 12);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-const cityImages = {
-  "New York": {
-    coords: [40.758, -73.9855],
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Times_Square_New_York_City_%28HDR%29.jpg/480px-Times_Square_New_York_City_%28HDR%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/NYC_Times_Square_wide_angle.jpg/480px-NYC_Times_Square_wide_angle.jpg"
-    ]
-  },
-  "London": {
-    coords: [51.5033, -0.1195],
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/London_Eye_Twilight_April_2006.jpg/480px-London_Eye_Twilight_April_2006.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Big_Ben_2012-06-25.jpg/480px-Big_Ben_2012-06-25.jpg"
-    ]
-  },
-  "Paris": {
-    coords: [48.8584, 2.2945],
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Tour_Eiffel_Wikimedia_Commons.jpg/480px-Tour_Eiffel_Wikimedia_Commons.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Cathedrale_Notre-Dame_de_Paris.jpg/480px-Cathedrale_Notre-Dame_de_Paris.jpg"
-    ]
-  }
-};
+const londonImages = [
+  "https://live.staticflickr.com/65535/53118622644_0d5e11474f_z.jpg",
+  "https://live.staticflickr.com/65535/53119030180_204e2b59cc_z.jpg",
+  "https://live.staticflickr.com/65535/53117803197_6d21c3dd18_z.jpg",
+  "https://live.staticflickr.com/65535/53119009145_81eb42a73f_z.jpg"
+];
 
-let currentCity = null;
-let currentImageIndex = 0;
+let currentIndex = 0;
 
-for (const [name, data] of Object.entries(cityImages)) {
-  L.marker(data.coords).addTo(map)
-    .bindPopup(name)
-    .on('click', () => {
-      currentCity = name;
-      currentImageIndex = 0;
-      updateImage();
-    });
-}
+const marker = L.marker([51.5074, -0.1278]).addTo(map)
+  .bindPopup("London")
+  .on("click", () => {
+    currentIndex = 0;
+    updateImage();
+  });
 
 function updateImage() {
-  if (currentCity) {
-    const imageUrl = cityImages[currentCity].images[currentImageIndex];
-    const img = document.getElementById("photo");
-    if (img) {
-      img.src = imageUrl;
-    }
+  const img = document.getElementById("photo");
+  if (img && londonImages.length > 0) {
+    img.src = londonImages[currentIndex];
   }
 }
 
 function nextImage() {
-  if (currentCity) {
-    const imgs = cityImages[currentCity].images;
-    currentImageIndex = (currentImageIndex + 1) % imgs.length;
-    updateImage();
-  }
+  currentIndex = (currentIndex + 1) % londonImages.length;
+  updateImage();
 }
 
 function prevImage() {
-  if (currentCity) {
-    const imgs = cityImages[currentCity].images;
-    currentImageIndex = (currentImageIndex - 1 + imgs.length) % imgs.length;
-    updateImage();
-  }
+  currentIndex = (currentIndex - 1 + londonImages.length) % londonImages.length;
+  updateImage();
 }
